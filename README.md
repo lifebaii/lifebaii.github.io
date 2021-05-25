@@ -1,3 +1,4 @@
 # 博客地址
 
-[blog](https://tianry.xyz)
+[blog](https://tianry.xyz/)
+
