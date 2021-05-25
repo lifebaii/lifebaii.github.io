@@ -6,22 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://truyun.github.io">
-  <title>【更新中】hexo使用心得 | 飞白子博客</title>
+  <title>【更新中】hexo使用心得 | 飞白的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Windows关闭本地服务鸣谢：https://blog.csdn.net/tianjun2012/article/details/79806760思路：根据端口号找到PID，再关闭服务 在终端中使用hexo s可以在本地预览，使用crtl+c停止服务。可是如果关闭终端窗口，又怎么关闭服务呢？">
 <meta name="keywords" content="技术">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【更新中】hexo使用心得">
 <meta property="og:url" content="https://truyun.github.io/2020/01/19/hexo使用心得/index.html">
-<meta property="og:site_name" content="飞白子博客">
+<meta property="og:site_name" content="飞白的博客">
 <meta property="og:description" content="Windows关闭本地服务鸣谢：https://blog.csdn.net/tianjun2012/article/details/79806760思路：根据端口号找到PID，再关闭服务 在终端中使用hexo s可以在本地预览，使用crtl+c停止服务。可是如果关闭终端窗口，又怎么关闭服务呢？">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-01-20T08:57:00.275Z">
+<meta property="og:updated_time" content="2021-05-25T03:19:38.071Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【更新中】hexo使用心得">
 <meta name="twitter:description" content="Windows关闭本地服务鸣谢：https://blog.csdn.net/tianjun2012/article/details/79806760思路：根据端口号找到PID，再关闭服务 在终端中使用hexo s可以在本地预览，使用crtl+c停止服务。可是如果关闭终端窗口，又怎么关闭服务呢？">
   
-    <link rel="alternative" href="/atom.xml" title="飞白子博客" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="飞白的博客" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -176,7 +176,7 @@
     <h2 id="Windows关闭本地服务"><a href="#Windows关闭本地服务" class="headerlink" title="Windows关闭本地服务"></a>Windows关闭本地服务</h2><p>鸣谢：<a href="https://blog.csdn.net/tianjun2012/article/details/79806760" target="_blank" rel="noopener">https://blog.csdn.net/tianjun2012/article/details/79806760</a><br>思路：根据端口号找到PID，再关闭服务</p>
 <p>在终端中使用<code>hexo s</code>可以在本地预览，使用<code>crtl+c</code>停止服务。可是如果关闭终端窗口，又怎么关闭服务呢？</p>
 <a id="more"></a>
-<p>已知hexo使用的默认端口为4000，使用<code>netstat -aon | findstr &quot;4000&quot;</code>找到对应的PID为15892</p>
+<p>已知hexo使用的默认端口为4000，进入cmd使用<code>netstat -aon | findstr &quot;4000&quot;</code>找到对应的PID为15892</p>
 <blockquote>
 <p>~ netstat -aon | findstr “4000”<br>TCP    0.0.0.0:4000           0.0.0.0:0              LISTENING       15892<br>TCP    [::]:4000              [::]:0                 LISTENING       15892</p>
 </blockquote>
