@@ -1,4 +1,4 @@
 # 博客地址
 
-[blog](https://tianry.xyz/)
+[个人博客](https://lifebaii.github.io/)
 
