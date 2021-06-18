@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="飞白的博客">
 <meta property="og:description" content="Windows关闭本地服务鸣谢：https://blog.csdn.net/tianjun2012/article/details/79806760思路：根据端口号找到PID，再关闭服务 在终端中使用hexo s可以在本地预览，使用crtl+c停止服务。可是如果关闭终端窗口，又怎么关闭服务呢？">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2021-06-18T07:45:52.652Z">
+<meta property="og:updated_time" content="2021-06-18T08:04:23.219Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【更新中】hexo使用心得">
 <meta name="twitter:description" content="Windows关闭本地服务鸣谢：https://blog.csdn.net/tianjun2012/article/details/79806760思路：根据端口号找到PID，再关闭服务 在终端中使用hexo s可以在本地预览，使用crtl+c停止服务。可是如果关闭终端窗口，又怎么关闭服务呢？">
@@ -181,9 +181,9 @@
 <p>~ netstat -aon | findstr “4000”<br>TCP    0.0.0.0:4000           0.0.0.0:0              LISTENING       15892<br>TCP    [::]:4000              [::]:0                 LISTENING       15892</p>
 </blockquote>
 <p>使用<code>taskkill -F -PID 15892</code>关闭之</p>
-<h2 id="修改模板"><a href="#修改模板" class="headerlink" title="修改模板"></a>修改模板</h2><p>修改scaffolds/post.md文件</p>
+<h2 id="修改模板"><a href="#修改模板" class="headerlink" title="修改模板"></a>修改模板</h2><p>修改scaffolds/post.md</p>
 <h2 id="文章配图"><a href="#文章配图" class="headerlink" title="文章配图"></a>文章配图</h2><ol>
-<li>修改项目配置文件<strong>_config.yml</strong><blockquote>
+<li>修改项目配置_config.yml**<blockquote>
 <p><code>post_asset_folder: true</code></p>
 </blockquote>
 </li>
@@ -201,7 +201,7 @@
 <li>在文章开头加入<code>top: 10</code>数字越大代表越靠前</li>
 </ol>
 <h2 id="修改域名"><a href="#修改域名" class="headerlink" title="修改域名"></a>修改域名</h2><p>修改<code>\hexo\blog\source\CNAME</code></p>
-<h2 id="失败处理"><a href="#失败处理" class="headerlink" title="失败处理"></a>失败处理</h2><p>执行hexo d时遇到问题，Deployer not found: git</p>
+<h2 id="失败处理"><a href="#失败处理" class="headerlink" title="失败处理"></a>失败处理</h2><p>执行hexo d时遇到问题，<code>Deployer not found: git</code></p>
 <p>在项目根目录执行npm install <code>--</code>save hexo-deployer-git后即可</p>
 
     
